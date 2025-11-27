@@ -2,10 +2,11 @@ vite plugin enable html embed application/typescript for test.
 
 
 # usage
+download this repo dir to project root, or other dir.
 
 vite.config.ts
 ```javascript
-import htmlEmbedTS from './vite/plugin-html-embed-typescript';
+import htmlEmbedTS from './vite-plugin-html-embed-typescript';
 
 export default {
   plugins: [
@@ -20,7 +21,7 @@ export default {
 ```
 
 
-test1.html
+index.html
 ```html
 
 <div>test TS in html</div>
@@ -34,10 +35,13 @@ console.log(`test ts in html`)
 </script>
 ```
 
+## RUN
 
 ```shell
 vite dev
 
-curl localhost:5173/test1.html
+curl localhost:5173
 ```
+
+get html script ts -> js
 
