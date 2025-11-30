@@ -1,6 +1,6 @@
 const NAME = "vite-plugin-html-embed-typescript";
 const includeRegex =
-  /(<script\s+type\s*=\s*"?application\/typescript"?\s*>(?<tscode>.*)<\/script\s*>)|(<script\s+[^\>]*title\s*=\s*"?(ts|typescript)"?[^\>]*>(?<tscode>.*)<\/script\s*>)/gims;
+  /(<script\s+type\s*=\s*"?application\/typescript"?\s*>(?<tscode>.*?)<\/script\s*>)|(<script\s+[^\>]*title\s*=\s*"?(ts|typescript)"?[^\>]*>(?<tscode>.*?)<\/script\s*>)/gims;
 
 import * as vite from "vite";
 console.error(`loading ${NAME} ....`);
